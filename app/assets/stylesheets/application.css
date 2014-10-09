@@ -1,0 +1,119 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /*
+ *= require font-awesome
+ */
+
+
+/* commmon */
+body {
+    padding-top: 100px; 
+    background: url(/images/icons-asphalt.jpg);
+}
+a {
+    color: #34495e !important;
+}
+a:hover {
+    background-color: initial;
+    text-decoration: none;
+/*    opacity: 0.9;*/
+}
+.container-inner {
+    overflow: hidden;
+    margin: 20px;
+    background: #fff !important;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+
+
+/* index */
+.link-btn {
+    display: inline-block;
+    padding: 4px;
+    border-radius: 3px;
+    color: #fff !important;
+    box-shadow:1px 1px 0 0 #666;
+    -webkit-transition: opacity .2s linear;
+}
+.btn-show,
+.btn-show:hover,
+.btn-edit,
+.btn-edit:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-delete,
+.btn-delete:hover {
+    background-color: #e74c3c;
+}
+.link-btn:hover {
+    opacity: 0.8;
+    margin: 1px -1px -1px 1px;
+    box-shadow: 0 0 0 0 #666;
+    -webkit-transition: opacity .2s linear;
+}
+table {
+    width: 100%;
+}
+table, td, th { 
+    vertical-align: middle;
+    border: none;
+    padding: 8px;
+    border-bottom: 1px dotted #ccc;
+}
+th {
+    border-bottom: 1px solid #DDD;
+}
+.h-idea-name {
+    width: 260px;
+}
+tr td:first-child {
+    font-weight: bold;
+}
+.create_date {
+    display: block;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.add-new-idea{
+    float: right;
+    margin-right: 8px;
+    padding: 7px 10px;
+    color: #fff !important;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #16a085;
+    box-shadow: 1px 1px 0 0 #666;
+    -webkit-transition: opacity .2s linear;
+}
+.add-new-idea:hover {
+    background-color: #16a085;
+    opacity: 0.8;
+    margin-right: 7px;
+    box-shadow: 0 0 0 0 #666;
+    -webkit-transition: opacity .2s linear;
+}
